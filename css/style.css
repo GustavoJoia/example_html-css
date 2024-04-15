@@ -1,3 +1,4 @@
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css');
 
 :root{
     --firstColor: rgb(22 46 42);
@@ -15,6 +16,16 @@
     color: var(--fontColor)
 }
 
+a{
+    text-decoration: none;
+}
+
+a i:hover{
+    transition: 1s;
+    color: #fff;
+    font-size: 1rem;
+}
+
 body{
     font-size: 16px;
     background-color: var(--firstColor);
@@ -25,8 +36,10 @@ div.logo_area {
     flex-direction: row;
     align-items: flex-end;
     padding-right: 60%;
-    margin: 1% 5% 1% 5%;
-    height: 3rem;
+    padding-left: 5%;
+    margin: 1% 0 1% 0;
+    height: 4.5rem;
+    border-bottom: 1px solid var(--fontColor);
 }
 
 div.line{
@@ -60,7 +73,7 @@ div.logo_area h4{
 body header nav {
     border-bottom: 1px solid var(--fontColor);
     background-color: var(--firstColor);
-    height: 8rem;
+    height: 9rem;
 }
 nav ul {
     height: 5%; 
@@ -95,11 +108,37 @@ span.material-symbols-outlined {
 section#home{
     display: flex;
     flex:content;
-    padding-left: 10%;
-    padding-top: 8%;
-    padding-bottom: 8%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 16%;
+    padding-bottom: 9%;
 }
 
 section#about div h1 {
     color: var(--secondColor)
+}
+
+section#about{
+    display: flex;
+    flex: content;
+    padding-right: 5%;
+    padding-left: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+section#about img {
+    width: auto;
+    height: 20%;
+    border-radius: 10%;
+}
+
+section#about div {
+    margin-left: 3%;
+    width: 40%;
+}
+
+div.social_area a i {
+    font-size: 1.3rem;
+    margin-right: 3%;
 }
